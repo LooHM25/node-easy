@@ -1,0 +1,15 @@
+{
+  "name": "easy",
+  "version": "1.0.0",
+  "description": "A helper project helps you  quickly fetch needed nodejs code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "koa"
+  ],
+  "author": "loohm",
+  "license": "ISC"
+}
