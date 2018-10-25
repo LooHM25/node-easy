@@ -4,12 +4,17 @@
   "description": "A helper project helps you  quickly fetch needed nodejs code",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "keywords": [
     "node",
     "koa"
   ],
   "author": "loohm",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.6.1",
+    "koa-router": "^7.4.0"
+  }
 }
