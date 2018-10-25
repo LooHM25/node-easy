@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "nodemon  --harmony index.js"
   },
   "keywords": [
     "node",
@@ -15,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "koa": "^2.6.1",
-    "koa-router": "^7.4.0"
+    "koa-router": "^7.4.0",
+    "log4js": "^3.0.6"
   }
 }

@@ -1,3 +1,5 @@
+const logger = require('../configs/logcfg').logger
+
 let fn_hello_a = async (ctx, next) => {
     let name = ctx.params.name;
     ctx.throw('wrong')

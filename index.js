@@ -1,7 +1,9 @@
 var koa = require('koa')
 var app = new koa()
 var router = require('./route').router
-const config = require('./configs/config').config
+var logger = require('./configs/logcfg').logger
+const banner = require('./configs/logcfg').banner
+const config = require('./configs/portcfg').port
 
 //error handler middleware
 const errHandler = async (ctx, next) => {
@@ -14,7 +16,6 @@ const errHandler = async (ctx, next) => {
         ctx.app.emit('error', err, ctx);
     }
 };
-
 app.use(errHandler)
 
 //add router middleware
@@ -23,5 +24,6 @@ app.use(router.allowedMethods());
 
 //start the server
 app.listen(config.port, () => {
-    console.log(`The server is started at port ${config.port} ...\n`)
+    logger.info(banner)
+    console.log(`The server is started at port ${config.port} ...`)
 })
